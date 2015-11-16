@@ -1,0 +1,5 @@
+2015-11-05 19:42:46,109 - streamparse.storm.component - ERROR - Exception in ParseMessage.run()
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/streamparse/storm/component.py", line 487, in run
+    self.initialize(storm_conf, context)
+TypeError: initialize() takes exactly 2 arguments (3 given)

@@ -1,0 +1,7 @@
+2015-11-05 16:59:27,763 - streamparse.storm.component - ERROR - Exception in Messages.run()
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/streamparse/storm/component.py", line 487, in run
+    self.initialize(storm_conf, context)
+  File "spouts/messages.py", line 11, in initialize
+    kafka = KafkaCLient('localhost:9092')
+NameError: global name 'KafkaCLient' is not defined

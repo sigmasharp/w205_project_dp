@@ -1,0 +1,91 @@
+2015-11-05 17:44:20,531 - kafka.client - DEBUG - Request 1: []
+2015-11-05 17:44:20,545 - kafka.conn - DEBUG - Reinitializing socket connection for localhost:9092
+2015-11-05 17:44:20,552 - kafka.conn - DEBUG - About to send 30 bytes to Kafka, request 1
+2015-11-05 17:44:20,553 - kafka.conn - DEBUG - Reading response 1 from Kafka
+2015-11-05 17:44:20,553 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 17:44:20,553 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 17:44:20,553 - kafka.conn - DEBUG - About to read 216 bytes from Kafka
+2015-11-05 17:44:20,553 - kafka.conn - DEBUG - Read 216/216 bytes from Kafka
+2015-11-05 17:44:20,553 - kafka.client - DEBUG - Response 1: MetadataResponse(brokers=[BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092)], topics=[TopicMetadata(topic='my-topic', error=0, partitions=[PartitionMetadata(topic='my-topic', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='product-1', error=0, partitions=[PartitionMetadata(topic='product-1', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='raw_data', error=0, partitions=[PartitionMetadata(topic='raw_data', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='test', error=0, partitions=[PartitionMetadata(topic='test', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])])
+2015-11-05 17:44:20,553 - kafka.client - INFO - Updating broker metadata: [BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092)]
+2015-11-05 17:44:20,554 - kafka.client - INFO - Updating topic metadata: [TopicMetadata(topic='my-topic', error=0, partitions=[PartitionMetadata(topic='my-topic', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='product-1', error=0, partitions=[PartitionMetadata(topic='product-1', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='raw_data', error=0, partitions=[PartitionMetadata(topic='raw_data', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='test', error=0, partitions=[PartitionMetadata(topic='test', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])]
+2015-11-05 17:44:20,554 - kafka.client - DEBUG - Request 2: ['product-1']
+2015-11-05 17:44:20,554 - kafka.conn - DEBUG - About to send 41 bytes to Kafka, request 2
+2015-11-05 17:44:20,554 - kafka.conn - DEBUG - Reading response 2 from Kafka
+2015-11-05 17:44:20,554 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 17:44:20,555 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 17:44:20,555 - kafka.conn - DEBUG - About to read 94 bytes from Kafka
+2015-11-05 17:44:20,555 - kafka.conn - DEBUG - Read 94/94 bytes from Kafka
+2015-11-05 17:44:20,555 - kafka.client - DEBUG - Response 2: MetadataResponse(brokers=[BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092)], topics=[TopicMetadata(topic='product-1', error=0, partitions=[PartitionMetadata(topic='product-1', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])])
+2015-11-05 17:44:20,555 - kafka.client - INFO - Updating broker metadata: [BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092)]
+2015-11-05 17:44:20,555 - kafka.client - INFO - Updating topic metadata: [TopicMetadata(topic='product-1', error=0, partitions=[PartitionMetadata(topic='product-1', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])]
+2015-11-05 17:44:20,556 - kafka.client - DEBUG - Request 3 to BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092): [OffsetFetchRequest(topic='product-1', partition=0)]
+2015-11-05 17:44:20,556 - kafka.conn - DEBUG - Reinitializing socket connection for ip-172-31-50-233.ec2.internal:9092
+2015-11-05 17:44:20,570 - kafka.conn - DEBUG - About to send 61 bytes to Kafka, request 3
+2015-11-05 17:44:20,571 - kafka.conn - DEBUG - Reading response 3 from Kafka
+2015-11-05 17:44:20,571 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 17:44:20,572 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 17:44:20,572 - kafka.conn - DEBUG - About to read 39 bytes from Kafka
+2015-11-05 17:44:20,572 - kafka.conn - DEBUG - Read 39/39 bytes from Kafka
+2015-11-05 17:44:20,572 - kafka.client - DEBUG - Response 3: [OffsetFetchResponse(topic='product-1', partition=0, offset=48, metadata='', error=0)]
+2015-11-05 17:44:20,572 - kafka.consumer.simple - DEBUG - internal queue empty, fetching more messages
+2015-11-05 17:44:20,573 - kafka.client - DEBUG - Request 4 to BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092): [FetchRequest(topic='product-1', partition=0, offset=48, max_bytes=4096)]
+2015-11-05 17:44:20,573 - kafka.conn - DEBUG - About to send 73 bytes to Kafka, request 4
+2015-11-05 17:44:20,573 - kafka.conn - DEBUG - Reading response 4 from Kafka
+2015-11-05 17:44:20,573 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 17:44:20,574 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 17:44:20,574 - kafka.conn - DEBUG - About to read 4137 bytes from Kafka
+2015-11-05 17:44:20,574 - kafka.conn - DEBUG - Read 4096/4137 bytes from Kafka
+2015-11-05 17:44:20,574 - kafka.conn - DEBUG - Read 4137/4137 bytes from Kafka
+2015-11-05 17:44:20,574 - kafka.client - DEBUG - Response 4: [FetchResponse(topic='product-1', partition=0, error=0, highwaterMark=40516, messages=<generator object _decode_message_set_iter at 0xf3e9b0>)]
+2015-11-05 17:44:21,080 - kafka.consumer - INFO - Committing new offsets for product-1, partitions [0]
+2015-11-05 17:44:21,081 - kafka.consumer - DEBUG - Commit offset 148 in SimpleConsumer: group=new_1group, topic=product-1, partition=0
+2015-11-05 17:44:21,081 - kafka.client - DEBUG - Request 5 to BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092): [OffsetCommitRequest(topic='product-1', partition=0, offset=148, metadata=None)]
+2015-11-05 17:44:21,081 - kafka.conn - DEBUG - About to send 71 bytes to Kafka, request 5
+2015-11-05 17:44:21,083 - kafka.conn - DEBUG - Reading response 5 from Kafka
+2015-11-05 17:44:21,083 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 17:44:21,092 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 17:44:21,092 - kafka.conn - DEBUG - About to read 29 bytes from Kafka
+2015-11-05 17:44:21,092 - kafka.conn - DEBUG - Read 29/29 bytes from Kafka
+2015-11-05 17:44:21,092 - kafka.client - DEBUG - Response 5: [OffsetCommitResponse(topic='product-1', partition=0, error=0)]
+2015-11-05 17:44:21,174 - kafka.consumer.simple - DEBUG - internal queue empty, fetching more messages
+2015-11-05 17:44:21,175 - kafka.client - DEBUG - Request 6 to BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092): [FetchRequest(topic='product-1', partition=0, offset=175, max_bytes=4096)]
+2015-11-05 17:44:21,175 - kafka.conn - DEBUG - About to send 73 bytes to Kafka, request 6
+2015-11-05 17:44:21,175 - kafka.conn - DEBUG - Reading response 6 from Kafka
+2015-11-05 17:44:21,176 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 17:44:21,176 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 17:44:21,176 - kafka.conn - DEBUG - About to read 4137 bytes from Kafka
+2015-11-05 17:44:21,176 - kafka.conn - DEBUG - Read 4096/4137 bytes from Kafka
+2015-11-05 17:44:21,176 - kafka.conn - DEBUG - Read 4137/4137 bytes from Kafka
+2015-11-05 17:44:21,176 - kafka.client - DEBUG - Response 6: [FetchResponse(topic='product-1', partition=0, error=0, highwaterMark=40516, messages=<generator object _decode_message_set_iter at 0xf3ef50>)]
+2015-11-05 17:44:21,581 - kafka.consumer - INFO - Committing new offsets for product-1, partitions [0]
+2015-11-05 17:44:21,581 - kafka.consumer - DEBUG - Commit offset 248 in SimpleConsumer: group=new_1group, topic=product-1, partition=0
+2015-11-05 17:44:21,581 - kafka.client - DEBUG - Request 7 to BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092): [OffsetCommitRequest(topic='product-1', partition=0, offset=248, metadata=None)]
+2015-11-05 17:44:21,582 - kafka.conn - DEBUG - About to send 71 bytes to Kafka, request 7
+2015-11-05 17:44:21,582 - kafka.conn - DEBUG - Reading response 7 from Kafka
+2015-11-05 17:44:21,582 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 17:44:21,584 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 17:44:21,584 - kafka.conn - DEBUG - About to read 29 bytes from Kafka
+2015-11-05 17:44:21,584 - kafka.conn - DEBUG - Read 29/29 bytes from Kafka
+2015-11-05 17:44:21,584 - kafka.client - DEBUG - Response 7: [OffsetCommitResponse(topic='product-1', partition=0, error=0)]
+2015-11-05 17:44:21,981 - kafka.consumer.simple - DEBUG - internal queue empty, fetching more messages
+2015-11-05 17:44:21,982 - kafka.client - DEBUG - Request 8 to BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092): [FetchRequest(topic='product-1', partition=0, offset=300, max_bytes=4096)]
+2015-11-05 17:44:21,982 - kafka.conn - DEBUG - About to send 73 bytes to Kafka, request 8
+2015-11-05 17:44:21,995 - kafka.conn - DEBUG - Reading response 8 from Kafka
+2015-11-05 17:44:21,995 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 17:44:21,996 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 17:44:21,996 - kafka.conn - DEBUG - About to read 4137 bytes from Kafka
+2015-11-05 17:44:21,996 - kafka.conn - DEBUG - Read 41/4137 bytes from Kafka
+2015-11-05 17:44:22,012 - kafka.conn - DEBUG - Read 4137/4137 bytes from Kafka
+2015-11-05 17:44:22,012 - kafka.client - DEBUG - Response 8: [FetchResponse(topic='product-1', partition=0, error=0, highwaterMark=40516, messages=<generator object _decode_message_set_iter at 0xf4ff50>)]
+2015-11-05 17:44:22,432 - streamparse.storm.component - ERROR - Received EOF while trying to read stdin from Storm, pipe appears to be broken, exiting.
+2015-11-05 17:44:22,471 - kafka.consumer - INFO - Committing new offsets for product-1, partitions [0]
+2015-11-05 17:44:22,471 - kafka.consumer - DEBUG - Commit offset 317 in SimpleConsumer: group=new_1group, topic=product-1, partition=0
+2015-11-05 17:44:22,472 - kafka.client - DEBUG - Request 9 to BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092): [OffsetCommitRequest(topic='product-1', partition=0, offset=317, metadata=None)]
+2015-11-05 17:44:22,472 - kafka.conn - DEBUG - About to send 71 bytes to Kafka, request 9
+2015-11-05 17:44:22,472 - kafka.conn - DEBUG - Reading response 9 from Kafka
+2015-11-05 17:44:22,472 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 17:44:22,474 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 17:44:22,474 - kafka.conn - DEBUG - About to read 29 bytes from Kafka
+2015-11-05 17:44:22,474 - kafka.conn - DEBUG - Read 29/29 bytes from Kafka
+2015-11-05 17:44:22,474 - kafka.client - DEBUG - Response 9: [OffsetCommitResponse(topic='product-1', partition=0, error=0)]

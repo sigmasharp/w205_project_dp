@@ -1,0 +1,47 @@
+2015-11-05 15:44:41,965 - kafka.client - DEBUG - Request 1: []
+2015-11-05 15:44:41,965 - kafka.conn - DEBUG - Reinitializing socket connection for localhost:9092
+2015-11-05 15:44:42,028 - kafka.conn - DEBUG - About to send 38 bytes to Kafka, request 1
+2015-11-05 15:44:42,032 - kafka.conn - DEBUG - Reading response 1 from Kafka
+2015-11-05 15:44:42,032 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 15:44:42,033 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 15:44:42,033 - kafka.conn - DEBUG - About to read 174 bytes from Kafka
+2015-11-05 15:44:42,033 - kafka.conn - DEBUG - Read 174/174 bytes from Kafka
+2015-11-05 15:44:42,091 - kafka.client - DEBUG - Response 1: MetadataResponse(brokers=[BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092)], topics=[TopicMetadata(topic='my-topic', error=0, partitions=[PartitionMetadata(topic='my-topic', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='product-1', error=0, partitions=[PartitionMetadata(topic='product-1', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='test', error=0, partitions=[PartitionMetadata(topic='test', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])])
+2015-11-05 15:44:42,106 - kafka.client - INFO - Updating broker metadata: [BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092)]
+2015-11-05 15:44:42,106 - kafka.client - INFO - Updating topic metadata: [TopicMetadata(topic='my-topic', error=0, partitions=[PartitionMetadata(topic='my-topic', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='product-1', error=0, partitions=[PartitionMetadata(topic='product-1', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='test', error=0, partitions=[PartitionMetadata(topic='test', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])]
+2015-11-05 15:44:42,107 - kafka.client - DEBUG - Request 2: []
+2015-11-05 15:44:42,107 - kafka.conn - DEBUG - About to send 38 bytes to Kafka, request 2
+2015-11-05 15:44:42,107 - kafka.conn - DEBUG - Reading response 2 from Kafka
+2015-11-05 15:44:42,107 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 15:44:42,107 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 15:44:42,108 - kafka.conn - DEBUG - About to read 174 bytes from Kafka
+2015-11-05 15:44:42,108 - kafka.conn - DEBUG - Read 174/174 bytes from Kafka
+2015-11-05 15:44:42,108 - kafka.client - DEBUG - Response 2: MetadataResponse(brokers=[BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092)], topics=[TopicMetadata(topic='my-topic', error=0, partitions=[PartitionMetadata(topic='my-topic', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='product-1', error=0, partitions=[PartitionMetadata(topic='product-1', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='test', error=0, partitions=[PartitionMetadata(topic='test', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])])
+2015-11-05 15:44:42,108 - kafka.client - INFO - Updating broker metadata: [BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092)]
+2015-11-05 15:44:42,108 - kafka.client - INFO - Updating topic metadata: [TopicMetadata(topic='my-topic', error=0, partitions=[PartitionMetadata(topic='my-topic', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='product-1', error=0, partitions=[PartitionMetadata(topic='product-1', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='test', error=0, partitions=[PartitionMetadata(topic='test', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])]
+2015-11-05 15:44:42,108 - kafka.consumer.kafka - INFO - Configuring consumer to fetch topic 'product-1', partition 0
+2015-11-05 15:44:42,108 - kafka.consumer.kafka - INFO - Consumer fetching stored offsets
+2015-11-05 15:44:42,109 - kafka.client - DEBUG - Request 3 to BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092): [OffsetFetchRequest(topic='product-1', partition=0)]
+2015-11-05 15:44:42,111 - kafka.conn - DEBUG - Reinitializing socket connection for ip-172-31-50-233.ec2.internal:9092
+2015-11-05 15:44:42,128 - kafka.conn - DEBUG - About to send 67 bytes to Kafka, request 3
+2015-11-05 15:44:42,139 - kafka.conn - DEBUG - Reading response 3 from Kafka
+2015-11-05 15:44:42,139 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 15:44:42,139 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 15:44:42,139 - kafka.conn - DEBUG - About to read 39 bytes from Kafka
+2015-11-05 15:44:42,139 - kafka.conn - DEBUG - Read 39/39 bytes from Kafka
+2015-11-05 15:44:42,139 - kafka.client - DEBUG - Response 3: [OffsetFetchResponse(topic='product-1', partition=0, offset=-1, metadata='', error=3)]
+2015-11-05 15:44:42,139 - kafka.client - DEBUG - Request 4 to BrokerMetadata(nodeId=0, host='ip-172-31-50-233.ec2.internal', port=9092): [OffsetRequest(topic='product-1', partition=0, time=-1, max_offsets=1)]
+2015-11-05 15:44:42,143 - kafka.conn - DEBUG - About to send 73 bytes to Kafka, request 4
+2015-11-05 15:44:42,143 - kafka.conn - DEBUG - Reading response 4 from Kafka
+2015-11-05 15:44:42,143 - kafka.conn - DEBUG - About to read 4 bytes from Kafka
+2015-11-05 15:44:42,143 - kafka.conn - DEBUG - Read 4/4 bytes from Kafka
+2015-11-05 15:44:42,144 - kafka.conn - DEBUG - About to read 41 bytes from Kafka
+2015-11-05 15:44:42,144 - kafka.conn - DEBUG - Read 41/41 bytes from Kafka
+2015-11-05 15:44:42,144 - kafka.client - DEBUG - Response 4: [OffsetResponse(topic='product-1', partition=0, error=0, offsets=(30520,))]
+2015-11-05 15:44:42,145 - streamparse.storm.component - ERROR - Exception in Messages.run()
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/streamparse/storm/component.py", line 487, in run
+    self.initialize(storm_conf, context)
+  File "spouts/messages.py", line 12, in initialize
+    bootstrap_servers=['localhost:9092']))
+TypeError: 'module' object is not callable

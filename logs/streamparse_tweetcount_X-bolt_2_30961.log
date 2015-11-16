@@ -1,0 +1,11 @@
+2015-11-15 09:19:09,848 - streamparse.storm.component - ERROR - Exception in ParseMessage.run()
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/streamparse/storm/component.py", line 489, in run
+    self._run()
+  File "/usr/lib/python2.7/site-packages/streamparse/storm/bolt.py", line 219, in _run
+    self.process(tup)
+  File "bolts/parsemessage.py", line 24, in process
+    self.log('%s' % field)
+  File "/usr/lib/python2.7/site-packages/streamparse/storm/component.py", line 407, in log
+    self.send_message({'command': 'log', 'msg': str(message),
+UnicodeEncodeError: 'ascii' codec can't encode character u'\xb0' in position 4: ordinal not in range(128)
